@@ -33,7 +33,7 @@ export default function AboutMeSection() {
             <motion.img
               src="/omnia.png"
               alt="Omnia AI Portfolio"
-               className="rounded-full w-[340px] h-[350px] object-top"
+               className="rounded-full w-[310px] h-[340px] object-top"
               whileHover={{ scale: 1.03 }}
               transition={{ duration: 0.3 }}
             />

@@ -175,6 +175,9 @@ const features = [
   "Advanced animations & interactions",
   "Reusable component systems",
   "Performance optimization",
+  "Figma to code ",
+  "REST & GraphQL APIs",
+  "WordPress collaboration",
 ];
 
 const FeatureList = () => {
