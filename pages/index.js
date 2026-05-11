@@ -68,8 +68,8 @@ export default function Home() {
 
       {/* CONTENT */}
       <HeroScrollDemo />
-      <TimelineDemo />
       <AppleCardsCarouselDemo />
+      <TimelineDemo />
       <AboutMeSection />
       {/* <ThreeDMarqueeDemo /> */}
       <StickyScrollRevealDemo />
