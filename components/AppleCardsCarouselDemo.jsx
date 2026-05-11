@@ -10,6 +10,13 @@ export function AppleCardsCarouselDemo() {
 
   const data = [
     {
+      category: "Cash Mind",
+      title: "Modern Cash Mind Platform",
+      src: "https://images.unsplash.com/photo-1579621970795-87facc2f976d?q=80&w=1200&auto=format&fit=crop",
+      link: "https://cash-mind.vercel.app/",
+      content: <DummyContent />,
+    },
+    {
       category: "Real Estate",
       title: "Modern Real Estate Platform",
       src: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1200&auto=format&fit=crop",
@@ -133,7 +140,7 @@ const DummyContent = () => {
     >
       <p className="text-neutral-300 text-sm md:text-lg leading-relaxed">
         This is one of my real frontend projects built using HTML, CSS,
-        JavaScript, React, and modern UI practices. Focused on clean UI/UX,
+        JavaScript, React.js, Next.js and modern UI practices. Focused on clean UI/UX,
         responsiveness, and interactive user experience.
       </p>
 

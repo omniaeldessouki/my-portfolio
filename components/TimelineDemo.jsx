@@ -14,18 +14,18 @@ export function TimelineDemo() {
           text="Started my frontend journey by learning the fundamentals of HTML, CSS, and JavaScript. Built multiple UI projects to strengthen my core skills, focusing on layout, responsiveness, and clean design while improving my overall understanding of how modern web applications are structured."
           projects={[
             {
-              name: "Landing Page",
+              name: "Landing Page with responsive design and modern UI elements",
               link: "https://omniaeldessouki.github.io/template-3/",
               // img: "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=800&q=80",
               img: "/image (2).png",
             },
             {
-              name: "To Do List App",
+              name: "To Do List App with dynamic task management, local storage and responsive design",
               link: "https://omniaeldessouki.github.io/To-Do-LIst/",
               img: "/image (6).png",
             },
             {
-              name: "Notes App",
+              name: "Notes App with local storage, dynamic UI and responsive design",
               link: "https://omniaeldessouki.github.io/Notes-App-/",
               img: "/image (8).png",
             },
@@ -39,20 +39,20 @@ export function TimelineDemo() {
       content: (
         <AnimatedSection
           // text="Advanced into React and Next.js, building interactive applications with better architecture and reusable components."
-          text="Advanced into React and Next.js, where I started building more dynamic and interactive applications. Focused on creating reusable components, improving code structure, and managing state efficiently while following best practices for scalable frontend development."
+          text="Advanced into React and Next.js, where I started building more dynamic and interactive applications. Focused on creating reusable components, improving code structure and managing state efficiently while following best practices for scalable frontend development."
           projects={[
             {
-              name: "Quiz App",
+              name: "Quiz App with dynamic question loading, interactive UI and responsive design",
               link: "https://omniaeldessouki.github.io/Quiz-App/",
               img: "/image (3).png",
             },
             {
-              name: "Slider Animation",
+              name: "Slider Animation (showcasing advanced UI animations and interactions)",
               link: "https://omniaeldessouki.github.io/Slider-Animations/",
               img: "/image (5).png",
             },
             {
-              name: "Omnia Store",
+              name: "Omnia Store (E-commerce platform, showcasing product listings, shopping cart functionality and responsive design)",
               link: "https://omniaeldessouki.github.io/Omnia-Store/",
               img: "/image (7).png",
             },
@@ -83,15 +83,20 @@ export function TimelineDemo() {
             text="Production-level and advanced projects:"
             projects={[
               {
-                name: "Real Estate Platform (Next.js)",
+                name: "Real Estate Platform (React.js & Next.js) with advanced UI, search functionality & responsive design and context API integration",
                 link: "https://real-estate-website-pi-one.vercel.app/",
                 // img: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80",
                 img: "/image (1).png",
               },
               {
-                name: "AI Portfolio System",
+                name: "AI Portfolio System (React.js) showcasing AI-powered UI components, interactive design and modern frontend architecture",
                 link: "/",
                 img: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80",
+              },
+                 {
+                name: "Cash Mind Project (Next.js) Dashboard for financial management & Login system  with advanced UI and modern frontend architecture",
+                link: "https://cash-mind.vercel.app/",
+                img: "/cashmind.png",
               },
             ]}
           />
