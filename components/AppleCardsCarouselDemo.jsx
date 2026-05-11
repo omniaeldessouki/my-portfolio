@@ -136,7 +136,7 @@ const DummyContent = () => {
       whileInView={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5 }}
       viewport={{ once: true }}
-      className="bg-[#0f0f0f] p-6 md:p-12 rounded-3xl border border-white/10"
+      className="bg-[#0f0f0f] p-6 md:p-8 rounded-3xl border border-white/10"
     >
       <p className="text-neutral-300 text-sm md:text-lg leading-relaxed">
         This is one of my real frontend projects built using HTML, CSS,
@@ -144,13 +144,7 @@ const DummyContent = () => {
         responsiveness, and interactive user experience.
       </p>
 
-      <motion.img
-        whileHover={{ scale: 1.02 }}
-        transition={{ duration: 0.3 }}
-        src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?q=80&w=1200"
-        className="w-full md:w-1/2 mx-auto mt-6 rounded-xl"
-        alt="project preview"
-      />
+    
     </motion.div>
   );
 };
