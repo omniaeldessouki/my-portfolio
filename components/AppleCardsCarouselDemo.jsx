@@ -291,7 +291,7 @@ function ProjectCard({ card }) {
         alt={card.title}
         className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-black/8 to-transparent" />
 
       <div className="absolute inset-x-0 bottom-0 p-5 md:p-6 text-white">
         <p className="text-sm font-medium text-white/75">{card.category}</p>
