@@ -144,14 +144,9 @@
 //         responsiveness, and interactive user experience.
 //       </p>
 
-    
 //     </motion.div>
 //   );
 // };
-
-
-
-
 
 "use client";
 
@@ -177,6 +172,15 @@ export function AppleCardsCarouselDemo() {
         "Property listing platform with search filters, responsive design, and smooth browsing experience.",
       src: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1200&auto=format&fit=crop",
       link: "https://real-estate-website-pi-one.vercel.app/",
+    },
+    {
+      category: "Food App",
+      title: "Modern Food Delivery Platform",
+      description:
+        "A modern food delivery platform with real-time order tracking and seamless checkout experience.",
+      // src: "https://picsum.photos/id/102/1200/800",
+      src: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=300&fit=crop",
+      link: "https://food-app-dyvs.vercel.app/",
     },
     {
       category: "E-commerce",
