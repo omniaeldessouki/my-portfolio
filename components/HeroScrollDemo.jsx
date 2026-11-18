@@ -288,16 +288,24 @@ const TypewriterTitle = ({ variants }) => {
     <motion.h1
       variants={variants}
       className="
-        h-[60px] flex items-center
-        text-3xl sm:text-4xl md:text-[3.5rem]
+        min-h-[60px] grid content-center
+        text-3xl sm:text-4xl min-[767px]:text-[clamp(2rem,4.4vw,3.25rem)] min-[1190px]:text-[3.5rem]
         font-bold leading-[1.1]
         bg-clip-text text-transparent
         bg-gradient-to-r from-purple-400 via-violet-500 to-pink-500
-        mx-auto md:mx-0
+        mx-auto min-[767px]:mx-0
       "
     >
-      {displayText} Developer
-      <span className="ml-1 inline-block w-[2px] h-[1em] bg-pink-500 animate-pulse" />
+      <span>
+        {displayText}
+        <span className="whitespace-nowrap">
+          Developer
+          <span
+            aria-hidden="true"
+            className="ml-1 inline-block h-[1em] w-[2px] align-[-0.1em] bg-pink-500 animate-pulse"
+          />
+        </span>
+      </span>
     </motion.h1>
   );
 };
@@ -319,18 +327,18 @@ export function HeroScrollDemo() {
   const [hovering, setHovering] = useState(false);
 
   return (
-    <BackgroundBeamsWithCollision>
+    <BackgroundBeamsWithCollision className="min-[767px]:max-[1190px]:h-auto">
       <section
         className="
           max-w-[1620px] mx-auto
           min-h-screen
           flex
-          flex-col md:flex-row
+          flex-col min-[767px]:flex-row
           items-center
           justify-between
-          gap-16
-          px-6 md:px-20
-          pt-[0px] md:pt-[70px]
+          gap-16 min-[767px]:max-[1190px]:gap-6
+          px-6 min-[1190px]:px-20
+          min-[767px]:max-[1190px]:w-full min-[767px]:max-[1190px]:pb-8 min-[767px]:pt-24 min-[1190px]:pt-[70px]
         "
         id="home"
       >
@@ -340,14 +348,15 @@ export function HeroScrollDemo() {
           initial="hidden"
           animate="show"
           className="
-            text-center md:text-left
+            text-center min-[767px]:text-left
             flex flex-col justify-center
-            order-2 md:order-none
+            order-2 min-[767px]:order-none
+            min-[767px]:max-[1190px]:min-w-0 min-[767px]:max-[1190px]:flex-1
           "
         >
           <motion.p
             variants={item}
-            className="text-xl md:text-2xl text-neutral-400 mb-3"
+            className="text-xl min-[767px]:text-2xl text-neutral-400 mb-3"
           >
             Hi, I'm Omnia El Dessouki 👋
           </motion.p>
@@ -359,9 +368,9 @@ export function HeroScrollDemo() {
             className="
               mt-6
               text-neutral-500
-              text-sm md:text-lg
-              max-w-md md:max-w-xl
-              mx-auto md:mx-0
+              text-sm min-[767px]:text-lg
+              max-w-md min-[767px]:max-w-xl
+              mx-auto min-[767px]:mx-0
             "
           >
             I build modern, responsive and scalable web applications using
@@ -375,7 +384,7 @@ export function HeroScrollDemo() {
               flex-col sm:flex-row
               gap-4
               mt-8
-              justify-center md:justify-start
+              justify-center min-[767px]:justify-start
             "
           >
             <Link href="#projects">
@@ -410,16 +419,17 @@ export function HeroScrollDemo() {
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="w-full md:w-1/2 flex justify-center order-1 md:order-none"
+          className="w-full min-[767px]:w-[36%] min-[767px]:max-[1190px]:shrink-0 min-[1190px]:w-1/2 flex justify-center order-1 min-[767px]:order-none"
         >
           <Lens hovering={hovering} setHovering={setHovering}>
             <motion.img
-              src="/omnia.png"
+              src="/Thoughtful Student in Sunlit Classroom.png"
               alt="Omnia AI Portfolio"
               className="
                 rounded-2xl
-                w-[380px] md:w-[400px]
-                h-[400px] md:h-[520px]
+                w-[380px] min-[767px]:w-full min-[1190px]:w-[500px]
+                h-[380px] min-[767px]:max-[1190px]:h-auto min-[767px]:max-[1190px]:aspect-[4/5] min-[1190px]:h-[600px]
+                min-[767px]:max-[1190px]:object-cover
                 object-top
               "
               whileHover={{ scale: 1.03 }}
