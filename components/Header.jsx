@@ -21,10 +21,10 @@ export default function Header() {
           {/* LOGO */}
           <Link href="/">
             <div className="flex items-center gap-2">
-              <div className="h-8 w-8 rounded-full bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500" />
+              {/* <div className="h-8 w-8 rounded-full bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500" /> */}
               {/* <Image src="/omnia.png" width={20} height={20}  className="rounded-full object-cover"/> */}
-              <span className="text-white font-semibold text-sm md:text-base">
-                Omnia 
+              <span className="bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500 bg-clip-text text-transparent font-semibold text-sm md:text-base">
+                Omnia EL Dessouki
               </span>
             </div>
           </Link>
