@@ -63,7 +63,7 @@ export default function Home() {
           content="https://omniaeldessouki.github.io/Portfolio/preview.png"
         />
       </Head>
-     
+
       <Header />
 
       {/* CONTENT */}

@@ -524,7 +524,7 @@ export function HeroScrollDemo() {
 
   return (
     <BackgroundBeamsWithCollision className="min-[767px]:max-[1190px]:h-auto">
-        <section
+      <section
         className="
           relative
           max-w-[1620px] w-full mx-auto
@@ -559,17 +559,17 @@ export function HeroScrollDemo() {
               maskImage:
                 "radial-gradient(ellipse 68% 72% at 54% 50%, #000 52%, transparent 96%)",
             }}
-            className="w-full max-w-[820px] flex justify-center"
+            className="w-full max-w-[720px] flex justify-center"
           >
             <Lens hovering={hovering} setHovering={setHovering}>
               <motion.img
-                src="/Thoughtful Student in Sunlit Classroom.png"
+                src="/Focused Workspace Portrait.png"
                 alt="Omnia AI Portfolio"
                 className="
-                  w-full max-w-[820px]
-                  h-[600px] min-[1190px]:h-[900px]
-                  object-contain object-center
-                "
+                  w-[400px] h-[600px]
+                  min-[1090px]:w-[500px] min-[1090px]:h-[620px]
+                  object-fit object-center rounded-2xl
+                  "
                 whileHover={{ scale: 1.03 }}
                 transition={{ duration: 0.3 }}
               />
@@ -660,7 +660,7 @@ export function HeroScrollDemo() {
         >
           <Lens hovering={hovering} setHovering={setHovering}>
             <motion.img
-              src="/Thoughtful Student in Sunlit Classroom.png"
+              src="/Focused Workspace Portrait.png"
               alt="Omnia AI Portfolio"
               className="
                 rounded-2xl
@@ -677,7 +677,6 @@ export function HeroScrollDemo() {
     </BackgroundBeamsWithCollision>
   );
 }
-
 
 // "use client";
 // import React, { useState, useEffect } from "react";
